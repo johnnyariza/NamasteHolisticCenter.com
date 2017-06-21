@@ -309,7 +309,7 @@
             $bgSlideshowWrapper.flexslider({
                 selector: '.slides > .bg-cover',
                 easing: 'linear',
-                slideshowSpeed: 4500,
+                slideshowSpeed: 5000,
                 controlNav: false,
                 directionNav: false,
                 keyboard: false,
