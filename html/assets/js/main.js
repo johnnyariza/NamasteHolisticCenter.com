@@ -1,8 +1,8 @@
 /* global ScrollMagic, Linear */
 
-(function($){
+(function ($) {
     "use strict";
-    
+
     var $document = $(document),
         $window = $(window),
         $body = $('body'),
@@ -13,95 +13,90 @@
         $galleryGrid = $('.gallery-grid'),
         navHeight = 80,
         navHeightShrink = 61;
-    
-    $document.on('ready', function(){
-        
-        $window.on('scroll', function(){
-        
+
+    $document.on('ready', function () {
+
+        $window.on('scroll', function () {
+
             // Shrink navigation.
-            if ($document.scrollTop() > navHeight){
+            if ($document.scrollTop() > navHeight) {
                 $navbar.addClass('shrink');
-            }
-            else{
+            } else {
                 $navbar.removeClass('shrink');
             }
 
 
             // Scroll to top.
-            if ($(this).scrollTop() > 100){
+            if ($(this).scrollTop() > 100) {
                 $scrollToTop.fadeIn();
-            } 
-            else{
+            } else {
                 $scrollToTop.fadeOut();
             }
         });
-        
-        
-        
-        $window.smartload(function(){
-            
+
+
+
+        $window.smartload(function () {
+
             // Bootstrap scrollspy
             var ww = Math.max($window.width(), window.innerWidth);
 
-            $body.scrollspy({    
+            $body.scrollspy({
                 target: '#navigation',
                 offset: ww > 992 ? navHeightShrink : navHeight
             });
-            
-            
+
+
             // Page scrolling
             pageScroll();
-            
-            
+
+
             // Gallery grid
-            if ($.fn.imagesLoaded && $.fn.isotope){
-                $galleryGrid.imagesLoaded(function(){
+            if ($.fn.imagesLoaded && $.fn.isotope) {
+                $galleryGrid.imagesLoaded(function () {
                     $galleryGrid.isotope({
                         itemSelector: '.item',
                         layoutMode: 'masonry'
                     });
                 });
-            }
-            else{
+            } else {
                 console.log('Gallery grid: Plugin "imagesLoaded" is not loaded.');
                 console.log('Gallery grid: Plugin "isotope" is not loaded.');
             }
-            
-            
+
+
             // Section - Treatments
             var $tab = $('#tab-treatments'),
                 $tabMenu = $tab.find('a[data-toggle="tab"]'),
                 $tabPaneId = $($tab.find('li.active').children().attr('href')),
                 $innerContent = $tabPaneId.find('.pricing-table-wrapper').children();
 
-            if ($.fn.tinyscrollbar){
+            if ($.fn.tinyscrollbar) {
                 $innerContent.tinyscrollbar();
-            }
-            else{
+            } else {
                 console.log('Section - Treatments: Plugin "tinyscrollbar" is not loaded.');
             }
 
             $tabMenu.removeClass('title-strikethrough-base-color');
             $tab.find('li.active').children().addClass('title-strikethrough-base-color');
 
-            $tabMenu.on('shown.bs.tab', function(e){
-                var $tabPaneId = $($(this).attr('href')),  
+            $tabMenu.on('shown.bs.tab', function (e) {
+                var $tabPaneId = $($(this).attr('href')),
                     $innerContent = $tabPaneId.find('.pricing-table-wrapper').children();
 
-                if ($.fn.tinyscrollbar){
+                if ($.fn.tinyscrollbar) {
                     $innerContent.tinyscrollbar();
-                }
-                else{
+                } else {
                     console.log('Section - Treatments: Plugin "tinyscrollbar" is not loaded.');
                 }
 
                 $tabMenu.removeClass('title-strikethrough-base-color');
                 $(this).addClass('title-strikethrough-base-color');
             });
-            
-            
+
+
             // Section - Reviews
-            if ($.fn.flickity){
+            if ($.fn.flickity) {
                 var $carouselReviews = $('.carousel-main', '#reviews');
                 $carouselReviews.flickity({
                     cellAlign: 'left',
@@ -109,74 +104,72 @@
                     prevNextButtons: false,
                     pageDots: false
                 });
-            }
-            else{
+            } else {
                 console.log('Section - Reviews: Plugin "flickity" is not loaded.');
             }
         });
-        
-        
-        
-        $window.smartresize(function(){
-            
+
+
+
+        $window.smartresize(function () {
+
             // Bootstrap scrollspy
             var dataScrollSpy = $body.data('bs.scrollspy'),
                 ww = Math.max($window.width(), window.innerWidth),
                 offset = ww > 992 ? navHeightShrink : navHeight;
-        
+
             dataScrollSpy.options.offset = offset;
             $body.data('bs.scrollspy', dataScrollSpy);
             $body.scrollspy('refresh');
-            
-            
+
+
             // Page scrolling
             pageScroll();
-            
-            
+
+
             // Gallery grid
-            if ($.fn.isotope){
+            if ($.fn.isotope) {
                 $galleryGrid.isotope('layout');
-            }
-            else{
+            } else {
                 console.log('Gallery grid: Plugin "isotope" is not loaded.');
             }
         });
-        
-        
-        
+
+
+
         /*------------------------------------*\
             Detect mobile device.
-        \*------------------------------------*/        
-        
+        \*------------------------------------*/
+
         var isMobile = {
-            Android: function(){
+            Android: function () {
                 return navigator.userAgent.match(/Android/i);
             },
-            BlackBerry: function(){
+            BlackBerry: function () {
                 return navigator.userAgent.match(/BlackBerry/i);
             },
-            iOS: function(){
+            iOS: function () {
                 return navigator.userAgent.match(/iPhone|iPad|iPod/i);
             },
-            Opera: function(){
+            Opera: function () {
                 return navigator.userAgent.match(/Opera Mini/i);
             },
-            Windows: function(){
+            Windows: function () {
                 return navigator.userAgent.match(/IEMobile/i);
             },
-            any: function(){
+            any: function () {
                 return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
             }
         };
-        
-        
-        
+
+
+
         /*------------------------------------*\
             Page scrolling feature.
         \*------------------------------------*/
 
-        function pageScroll(){
-            $pageScrollLink.on('click', function(e){
+        function pageScroll() {
+            $pageScrollLink.on('click', function (e) {
                 var ww = Math.max($window.width(), window.innerWidth),
                     anchor = $(this),
                     href = anchor.attr('href'),
@@ -185,126 +178,133 @@
                 $('html, body').stop().animate({
                     scrollTop: $(href).offset().top - (offset - 1)
                 }, 1000, 'easeInOutExpo');
-                
+
                 // Automatically retract the navigation after clicking on one of the menu items.
                 $navbarCollapse.collapse('hide');
-                
+
                 e.preventDefault();
             });
         };
-        
-        
-        
+
+
+
         /*------------------------------------*\
             Gallery filtering
-        \*------------------------------------*/   
-        
-        if ($.fn.imagesLoaded && $.fn.isotope){
+        \*------------------------------------*/
+
+        if ($.fn.imagesLoaded && $.fn.isotope) {
             var $gridSelectors = $('.gallery-filter').find('a');
-            $gridSelectors.on('click', function(e){
+            $gridSelectors.on('click', function (e) {
                 $gridSelectors.parent().removeClass('active');
                 $(this).parent().addClass('active');
 
                 var selector = $(this).attr('data-filter');
                 $galleryGrid.isotope({
                     filter: selector
-                });            
+                });
 
                 e.preventDefault();
             });
-        }
-        else{
+        } else {
             console.log('Gallery filtering: Plugin "imagesLoaded" is not loaded.');
             console.log('Gallery filtering: Plugin "isotope" is not loaded.');
         }
-            
-        
-        
+
+
+
         /*------------------------------------*\
             Gallery magnific popup
-        \*------------------------------------*/   
-        if ($.fn.magnificPopup){
+        \*------------------------------------*/
+        if ($.fn.magnificPopup) {
             $galleryGrid.magnificPopup({
                 delegate: 'a',
                 type: 'image',
                 fixedContentPos: false,
                 mainClass: 'mfp-fade',
-                gallery:{
+                gallery: {
                     enabled: true,
                     navigateByImgClick: true,
-                    preload: [0,2],
+                    preload: [0, 2],
                     tPrev: 'Previous',
                     tNext: 'Next',
                     tCounter: '<span class="mfp-counter-curr">%curr%</span> of <span class="mfp-counter-total">%total%</span>'
                 }
             });
-        }
-        else{
+        } else {
             console.log('Gallery magnific popup: Plugin "magnificPopup" is not loaded.');
         }
-        
-        
-        
+
+
+
         /*------------------------------------*\
             Counter number
         \*------------------------------------*/
-        
-        if ($.fn.countTo){
+
+        if ($.fn.countTo) {
             var $timer = $('.timer');
-            $timer.one('inview', function(isInView){
-                if(isInView){
+            $timer.one('inview', function (isInView) {
+                if (isInView) {
                     $(this).countTo();
                 }
             });
-        }
-        else{
+        } else {
             console.log('Counter Number: Plugin "countTo" is not loaded.');
         }
-        
-        
-        
+
+
+
         /*------------------------------------*\
             Features box
-        \*------------------------------------*/        
-        
-        if (isMobile.any()){
+        \*------------------------------------*/
+
+        if (isMobile.any()) {
             var $featuresBox = $('.features-box');
-            
+
             $featuresBox.addClass('is-mobile');
             $featuresBox.find('.show-on-hover').addClass('is-mobile');
-            
-            $featuresBox.on('click', function(e){
+
+            $featuresBox.on('click', function (e) {
                 $(this).toggleClass('active');
                 $(this).find('.show-on-hover').toggleClass('active');
                 e.preventDefault();
             });
         };
-        
-        
-        
+
+
+
         /*------------------------------------*\
             Home bg parallax
         \*------------------------------------*/
-        
-        if (typeof ScrollMagic !== 'undefined'){
+
+        if (typeof ScrollMagic !== 'undefined') {
             var selector = '#home-bg-parallax';
-            
+
             // Init controller
-            var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: 'onEnter', duration: '200%'}});
-        
+            var controller = new ScrollMagic.Controller({
+                globalSceneOptions: {
+                    triggerHook: 'onEnter',
+                    duration: '200%'
+                }
+            });
+
             // Build scenes
-            new ScrollMagic.Scene({triggerElement: selector})
-                    .setTween(selector + ' > .bg-parallax', {y: '80%', ease: Linear.easeNone})
-                    .addTo(controller);
+            new ScrollMagic.Scene({
+                    triggerElement: selector
+                })
+                .setTween(selector + ' > .bg-parallax', {
+                    y: '80%',
+                    ease: Linear.easeNone
+                })
+                .addTo(controller);
         }
-        
-        
-        
+
+
+
         /*------------------------------------*\
             Home bg slideshow
         \*------------------------------------*/
-        
-        if ($.fn.flexslider){
+
+        if ($.fn.flexslider) {
             var $bgSlideshowWrapper = $('.bg-slideshow-wrapper');
             $bgSlideshowWrapper.flexslider({
                 selector: '.slides > .bg-cover',
@@ -316,18 +316,17 @@
                 pauseOnAction: false,
                 touch: false
             });
-        }
-        else{
+        } else {
             console.log('Home bg slideshow: Plugin "flexslider" is not loaded.');
         }
-        
-        
-        
+
+
+
         /*------------------------------------*\
             Home bg slider
         \*------------------------------------*/
-        
-        if ($.fn.flickity){
+
+        if ($.fn.flickity) {
             var $bgSliderWrapper = $('.bg-slider-wrapper');
             $bgSliderWrapper.flickity({
                 cellAlign: 'left',
@@ -338,18 +337,17 @@
                 autoPlay: 3500,
                 pauseAutoPlayOnHover: false
             });
-        }
-        else{
+        } else {
             console.log('Home bg slider: Plugin "flickity" is not loaded.');
         }
-        
-        
-        
+
+
+
         /*------------------------------------*\
             Animated typing
         \*------------------------------------*/
-        
-        if ($.fn.typed){
+
+        if ($.fn.typed) {
             var $typedStrings = $('.typed-strings');
             $typedStrings.typed({
                 strings: ['Weston', 'Miramar', 'Davie', 'Plantation', 'Cooper City', 'South West Ranches'],
@@ -357,60 +355,58 @@
                 loop: true,
                 showCursor: false
             });
-        }
-        else{
+        } else {
             console.log('Animated typing: Plugin "typed" is not loaded.');
         }
-        
-        
-        
+
+
+
         /*------------------------------------*\
             Contact form
         \*------------------------------------*/
-        
+
         var $contactForm = $('#form-contact'),
             $btnContactForm = $('#btn-form-contact');
-        
-        $btnContactForm.on('click', function(e){
+
+        $btnContactForm.on('click', function (e) {
             $contactForm.validate();
-            if ($contactForm.valid()){
+            if ($contactForm.valid()) {
                 send_mail($contactForm, $btnContactForm);
             }
             e.preventDefault();
         });
-        
-        
+
+
         // Send mail
-        function send_mail($form, $btnForm){
+        function send_mail($form, $btnForm) {
             var defaultMessage = $btnForm.html(),
                 sendingMessage = 'Loading...',
                 errorMessage = 'Error Sending!',
                 okMessage = 'Email Sent!';
-            
+
             $btnForm.html(sendingMessage);
-            
+
             $.ajax({
                 url: $form.attr('action'),
                 type: 'post',
                 dataType: 'json',
                 data: $form.serialize(),
-                success: function(data){
-                    if (data === true){
+                success: function (data) {
+                    if (data === true) {
                         $btnForm.html(okMessage);
                         $form.find('input[type="text"], textarea').val('');
-                    }
-                    else{
+                    } else {
                         $btnForm.html(errorMessage);
                     }
 
-                    setTimeout(function(){
+                    setTimeout(function () {
                         $btnForm.html(defaultMessage);
                     }, 3000);
                 },
-                error: function(xhr, err){
+                error: function (xhr, err) {
                     $btnForm.html(errorMessage);
 
-                    setTimeout(function(){
+                    setTimeout(function () {
                         $btnForm.html(defaultMessage);
                     }, 3000);
                 }
