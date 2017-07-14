@@ -420,10 +420,10 @@ footer {
     }
 }
 .footer-logo {
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 .footer-logo img {
-    max-height: 38px;
+    max-height: 54px;
 }
 .footer-copyright {
     padding-top: 32px;

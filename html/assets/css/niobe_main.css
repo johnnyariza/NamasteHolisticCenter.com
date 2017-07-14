@@ -1904,7 +1904,7 @@ h6 {
 }
 .navbar .navbar-brand img {
     display: inline-block;
-    max-height: 43px;
+    max-height: 48px;
     position: absolute;
     top: 18px;
     left: auto;
@@ -5325,7 +5325,7 @@ section {
         line-height: 60px !important;
     }
     .navbar.shrink .navbar-brand img {
-        max-height: 38px;
+        max-height: 48px;
         top: 9px;
     }
     .navbar.shrink .navbar-nav > li {
