@@ -309,12 +309,12 @@
             $bgSlideshowWrapper.flexslider({
                 selector: '.slides > .bg-cover',
                 easing: 'linear',
-                slideshowSpeed: 5000,
-                controlNav: false,
-                directionNav: false,
-                keyboard: false,
+                slideshowSpeed: 3800,
+                controlNav: true,
+                directionNav: true,
+                keyboard: true,
                 pauseOnAction: false,
-                touch: false
+                touch: true
             });
         } else {
             console.log('Home bg slideshow: Plugin "flexslider" is not loaded.');
