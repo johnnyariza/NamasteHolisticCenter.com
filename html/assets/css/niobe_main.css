@@ -1873,6 +1873,7 @@ h6 {
 .navbar .navbar-nav > li > a {
     color: #ffffff;
 }
+
 .navbar,
 .navbar .container,
 .navbar .navbar-brand,
@@ -3576,6 +3577,13 @@ section {
 }
 
 
+
+/*------------------------------------*\
+Extra pages
+\*------------------------------------*/
+#go-back {
+    color: #000;
+}
 
 
 
