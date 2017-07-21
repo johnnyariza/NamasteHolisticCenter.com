@@ -309,11 +309,11 @@
             $bgSlideshowWrapper.flexslider({
                 selector: '.slides > .bg-cover',
                 easing: 'linear',
-                slideshowSpeed: 3800,
+                slideshowSpeed: 4000,
                 controlNav: true,
                 directionNav: true,
                 keyboard: true,
-                pauseOnAction: false,
+                pauseOnAction: true,
                 touch: true
             });
         } else {
