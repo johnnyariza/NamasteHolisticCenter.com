@@ -96,6 +96,9 @@
 #home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(3) {
     background: url("../images/bg-home-3.jpg");
 }
+#home-bg-slider .bg-slider-wrapper .flickity-slider .bg-cover:nth-child(4) {
+	background: url("../images/bg-home-4.jpg");
+}
 #home-bg-slideshow .display-table-cell,
 #home-bg-slider .display-table-cell {
     position: relative;
@@ -110,15 +113,7 @@
     Intro
 \*------------------------------------*/
 
-#intro img {
-    height: 260px;
-    left: 50%;
-    margin-left: -130px;
-    margin-top: -130px;
-    position: inherit;
-    top: 50%;
-    width: 260px;
-}
+
 @media (min-width: 480px) {
     #intro img {
         height: 300px;
@@ -427,4 +422,20 @@ footer {
 }
 .footer-copyright {
     padding-top: 32px;
+}
+
+/*------------------------------------*\
+Intro 02
+\*------------------------------------*/
+
+#intro {
+	display: inline-block;
+	height: 260px;
+	left: 50%;
+	margin-left: -130px;
+	margin-top: -90px;
+	position: inherit;
+	top: 50%;
+	width: 260px;
+	text-align: center;
 }

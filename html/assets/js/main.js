@@ -102,6 +102,7 @@
                     cellAlign: 'left',
                     contain: true,
                     prevNextButtons: false,
+					draggable: false,
                     pageDots: false
                 });
             } else {
@@ -331,10 +332,11 @@
             $bgSliderWrapper.flickity({
                 cellAlign: 'left',
                 contain: true,
-                prevNextButtons: false,
+                prevNextButtons: true,
                 pageDots: false,
                 draggable: false,
-                autoPlay: 3500,
+                autoPlay: 4000,
+				wrapAround: true,
                 pauseAutoPlayOnHover: false
             });
         } else {
