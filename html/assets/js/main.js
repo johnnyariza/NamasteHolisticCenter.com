@@ -330,7 +330,8 @@
         if ($.fn.flickity) {
             var $bgSliderWrapper = $('.bg-slider-wrapper');
             $bgSliderWrapper.flickity({
-                cellAlign: 'left',
+                animation: 'fade',
+				cellAlign: 'left',
                 contain: true,
                 prevNextButtons: true,
                 pageDots: false,
