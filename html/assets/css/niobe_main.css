@@ -4364,6 +4364,11 @@ Extra pages
 }
 
 @media (max-width: 991px) {
+	
+	#reviews {
+		display: none;
+	}
+	
 	.sm-text-extra-small {
 		font-size: 10px !important;
 		line-height: 15px !important;
