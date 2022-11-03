@@ -7,16 +7,16 @@
 */
 
 .title-underline-base-color {
-    border-color: #aa2e85;
+    border-color: #aa68aa;
 }
 .title-underline-thick-base-color {
-    border-color: #aa2e85;
+    border-color: #aa68aa;
 }
 .title-sideline-base-color:before {
-    background-color: #aa2e85;
+    background-color: #aa68aa;
 }
 .title-strikethrough-base-color:before {
-    background-color: #aa2e85;
+    background-color: #aa68aa;
 }
 
 
@@ -25,7 +25,7 @@
 */
 
 .text-base-color {
-    color: #aa2e85 !important;
+    color: #aa68aa !important;
 }
 
 
@@ -35,7 +35,7 @@
 
 .text-hover-base-color:hover,
 .text-hover-base-color:focus {
-    color: #aa2e85 !important;
+    color: #aa68aa !important;
 }
 
 
@@ -44,7 +44,7 @@
 */
 
 .bg-base-color {
-    background-color: #aa2e85 !important;
+    background-color: #aa68aa !important;
 }
 
 
@@ -53,7 +53,7 @@
 */
 
 .bg-hover-base-color:hover {
-    background-color: #aa2e85 !important;
+    background-color: #aa68aa !important;
 }
 
 
@@ -62,7 +62,7 @@
 */
 
 .border-base-color {
-    border-color: #aa2e85 !important;
+    border-color: #aa68aa !important;
 }
 
 
@@ -71,24 +71,24 @@
 */
 
 .box-shadow-base-color {
-    -webkit-box-shadow: 0px 0px 0px 1px #aa2e85 !important;
-    -moz-box-shadow: 0px 0px 0px 1px #aa2e85 !important;
-    box-shadow: 0px 0px 0px 1px #aa2e85 !important;
+    -webkit-box-shadow: 0px 0px 0px 1px #aa68aa !important;
+    -moz-box-shadow: 0px 0px 0px 1px #aa68aa !important;
+    box-shadow: 0px 0px 0px 1px #aa68aa !important;
 }
 .box-shadow-thick-base-color {
-    -webkit-box-shadow: 0px 0px 0px 2px #aa2e85 !important;
-    -moz-box-shadow: 0px 0px 0px 2px #aa2e85 !important;
-    box-shadow: 0px 0px 0px 2px #aa2e85 !important;
+    -webkit-box-shadow: 0px 0px 0px 2px #aa68aa !important;
+    -moz-box-shadow: 0px 0px 0px 2px #aa68aa !important;
+    box-shadow: 0px 0px 0px 2px #aa68aa !important;
 }
 .box-shadow-medium-thick-base-color {
-    -webkit-box-shadow: 0px 0px 0px 3px #aa2e85 !important;
-    -moz-box-shadow: 0px 0px 0px 3px #aa2e85 !important;
-    box-shadow: 0px 0px 0px 3px #aa2e85 !important;
+    -webkit-box-shadow: 0px 0px 0px 3px #aa68aa !important;
+    -moz-box-shadow: 0px 0px 0px 3px #aa68aa !important;
+    box-shadow: 0px 0px 0px 3px #aa68aa !important;
 }
 .box-shadow-extra-thick-base-color {
-    -webkit-box-shadow: 0px 0px 0px 4px #aa2e85 !important;
-    -moz-box-shadow: 0px 0px 0px 4px #aa2e85 !important;
-    box-shadow: 0px 0px 0px 4px #aa2e85 !important;
+    -webkit-box-shadow: 0px 0px 0px 4px #aa68aa !important;
+    -moz-box-shadow: 0px 0px 0px 4px #aa68aa !important;
+    box-shadow: 0px 0px 0px 4px #aa68aa !important;
 }
 
 
@@ -97,23 +97,23 @@
 */
 
 .btn.btn-base-color {
-    background-color: #aa2e85;
+    background-color: #aa68aa;
 }
 .btn.btn-base-color.btn-hover-transparent:hover {
-    border-color: #aa2e85;
-    color: #aa2e85;
+    border-color: #aa68aa;
+    color: #aa68aa;
 }
 .btn.btn-outline-base-color {
-    border-color: #aa2e85;
-    color: #aa2e85;
+    border-color: #aa68aa;
+    color: #aa68aa;
 }
 .btn.btn-outline-base-color:hover,
 .btn.btn-outline-base-color:focus {
-    background-color: #aa2e85;
+    background-color: #aa68aa;
 }
 .btn.btn-outline-base-color.btn-hover-transparent:hover,
 .btn.btn-outline-base-color.btn-hover-transparent:focus {
-    color: #aa2e85;
+    color: #aa68aa;
 }
 
 
@@ -122,7 +122,7 @@
 */
 
 .pace .pace-progress {
-    background-color: #aa2e85;
+    background-color: #aa68aa;
 }
 
 
@@ -131,206 +131,206 @@
 */
 
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }
 .triangle-top-right.triangle-base-color {
-    border-color: transparent #aa2e85 transparent transparent;
+    border-color: transparent #aa68aa transparent transparent;
 }
 .triangle-top-left.triangle-base-color {
-    border-color: #aa2e85 transparent transparent transparent;
+    border-color: #aa68aa transparent transparent transparent;
 }
 .triangle-bottom-right.triangle-base-color {
-    border-color: transparent transparent #aa2e85 transparent;
+    border-color: transparent transparent #aa68aa transparent;
 }
 .triangle-bottom-left.triangle-base-color {
-    border-color: transparent transparent transparent #aa2e85;
+    border-color: transparent transparent transparent #aa68aa;
 }

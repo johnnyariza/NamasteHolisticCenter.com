@@ -2,13 +2,13 @@
 require 'PHPMailer/PHPMailerAutoload.php';
 require 'PHPMailer/extras/Security.php';
 
-define('SMTP_HOST', 'YOUR_HOSTNAME'); // Hostname of the mail server
-define('SMTP_USERNAME', 'USERNAME@DOMAIN.com'); // Username for SMTP authentication any valid email created in your domain
-define('SMTP_PASSWORD', 'YOUR_PASSWORD'); // Password for SMTP authentication
-//define('SMTP_PORT', 25); // Port of the SMTP like to be 25, 80, 465 or 587
+define('SMTP_HOST', 'smtp.live.com'); // Hostname of the mail server
+define('SMTP_USERNAME', 'johnnyarizac@www.pembrokepinesacupuncture.com'); // Username for SMTP authentication any valid email created in your domain
+define('SMTP_PASSWORD', 'JMSG1891!'); // Password for SMTP authentication
+define('SMTP_PORT', 25); // Port of the SMTP like to be 25, 80, 465 or 587
 
 // To address who will receive this email 
-$to = 'example@gmail.com';
+$to = 'johnnyarizac@hotmail.com';
 
 $security = new Security();
 
