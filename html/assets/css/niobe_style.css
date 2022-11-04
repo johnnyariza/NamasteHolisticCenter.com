@@ -396,6 +396,40 @@ Slider logo
         transform: translateX(calc(-400px * 5));
     }
 }
+@media max-width(800px){
+    .slider{
+        width: 75vw;
+        height: auto;
+        margin: auto;
+        overflow: hidden;
+    }
+    .slider .slide-track{
+        display: flex;
+        animation: scroll 40s linear infinite;
+        -webkit-animation: scroll 40s linear infinite;
+        width: calc(380px * 10);
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .slider .slide{
+        padding-top: 60px;
+        width: 200px;
+    }
+
+    .slider .slide img{
+        width: 100%;
+    }
+    @keyframes scroll{
+        0%{
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        100%{
+            -webkit-transform: translateX(calc(-400px * 5));
+            transform: translateX(calc(-400px * 5));
+        }
+}
 /*------------------------------------*\
     Section - Contact
 \*------------------------------------*/
