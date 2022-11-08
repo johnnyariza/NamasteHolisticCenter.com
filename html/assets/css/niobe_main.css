@@ -39,6 +39,7 @@ img {
 	-webkit-backface-visibility: hidden;
     display: flex;
 	height: auto;
+    justify-content: center;
     margin: auto;
 	max-width: 100%;  
 }
