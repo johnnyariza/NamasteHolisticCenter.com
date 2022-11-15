@@ -373,7 +373,7 @@ Slider logo
     display: flex;
     animation: scroll 40s linear infinite;
     -webkit-animation: scroll 40s linear infinite;
-    width: calc(380px * 10);
+    width: calc(450px * 10);
     align-items: center;
     justify-content: space-around;
 }
